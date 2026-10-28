@@ -1,0 +1,13 @@
+{
+  "name": "mecsc-chatbot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MECSc course-enquiry chat widget. Browser-only (FAQ mode) by default; optional server/AI mode via data-server.",
+  "scripts": {
+    "build": "esbuild src/widget.js --bundle --minify --target=es2017 --charset=utf8 --outfile=widget.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "license": "MIT"
+}
