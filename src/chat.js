@@ -41,8 +41,8 @@ PUBLIC CLASS FEES (per person)
 - Self-pay (non-HRDC) clients pay the same fixed price. No discount.
 
 CONFIRMED 2026 DATES
-- MCPC 1: 23-25 Nov 2026.
-- MCPC 2: 26-27 Nov 2026.
+- MCPC 1: 23-25 Nov 2026 and 14-16 Dec 2026.
+- MCPC 2: 26-27 Nov 2026 and 17-18 Dec 2026.
 - MCPC 3: to be advised (announced on Facebook and TikTok).
 - MCPC 4: 23-24 Dec 2026.
 - Give confirmed dates directly. Only refer people to Facebook / TikTok for dates that are still to be advised.
@@ -137,11 +137,11 @@ function detectLanguage(text, fallbackLang) {
 const COURSES = {
   1: {
     en: 'Basic Cleaning', ms: 'Pembersihan Asas', zh: '基础清洁',
-    days: 3, price: 'RM1,900', dates: { en: '23-25 Nov 2026', ms: '23-25 November 2026', zh: '2026年11月23-25日' }
+    days: 3, price: 'RM1,900', dates: { en: '23-25 Nov 2026 or 14-16 Dec 2026', ms: '23-25 November 2026 atau 14-16 Disember 2026', zh: '2026年11月23-25日或12月14-16日' }
   },
   2: {
     en: 'Floor Maintenance, Exterior & Interior Cleaning', ms: 'Penyelenggaraan Lantai, Pembersihan Luar & Dalam', zh: '地板保养、室内外清洁',
-    days: 2, price: 'RM1,900', dates: { en: '26-27 Nov 2026', ms: '26-27 November 2026', zh: '2026年11月26-27日' }
+    days: 2, price: 'RM1,900', dates: { en: '26-27 Nov 2026 or 17-18 Dec 2026', ms: '26-27 November 2026 atau 17-18 Disember 2026', zh: '2026年11月26-27日或12月17-18日' }
   },
   3: {
     en: 'Carpet Maintenance', ms: 'Penyelenggaraan Permaidani', zh: '地毯保养',
@@ -165,9 +165,9 @@ const T = {
     zh: `公开班每位学费：MCPC 1、MCPC 2、MCPC 3 各为 RM1,900，MCPC 4 为 RM2,600。自费（非HRDC）学员价格相同，固定价格，没有折扣。报名链接：${REG}`
   },
   datesAll: {
-    en: `Confirmed 2026 dates: MCPC 1 on 23-25 Nov, MCPC 2 on 26-27 Nov and MCPC 4 on 23-24 Dec. MCPC 3 dates are still to be advised and will be announced on our Facebook page and TikTok (${TIKTOK}). Register here: ${REG}`,
-    ms: `Tarikh 2026 yang disahkan: MCPC 1 pada 23-25 November, MCPC 2 pada 26-27 November dan MCPC 4 pada 23-24 Disember. Tarikh MCPC 3 akan dimaklumkan kemudian di Facebook dan TikTok kami (${TIKTOK}). Daftar di sini: ${REG}`,
-    zh: `2026年已确认日期：MCPC 1 为11月23-25日，MCPC 2 为11月26-27日，MCPC 4 为12月23-24日。MCPC 3 日期待定，将在我们的 Facebook 专页和 TikTok（${TIKTOK}）公布。报名链接：${REG}`
+    en: `Confirmed 2026 dates: MCPC 1 on 23-25 Nov or 14-16 Dec, MCPC 2 on 26-27 Nov or 17-18 Dec, and MCPC 4 on 23-24 Dec. MCPC 3 dates are still to be advised and will be announced on our Facebook page and TikTok (${TIKTOK}). Register here: ${REG}`,
+    ms: `Tarikh 2026 yang disahkan: MCPC 1 pada 23-25 November atau 14-16 Disember, MCPC 2 pada 26-27 November atau 17-18 Disember, dan MCPC 4 pada 23-24 Disember. Tarikh MCPC 3 akan dimaklumkan kemudian di Facebook dan TikTok kami (${TIKTOK}). Daftar di sini: ${REG}`,
+    zh: `2026年已确认日期：MCPC 1 为11月23-25日或12月14-16日，MCPC 2 为11月26-27日或12月17-18日，MCPC 4 为12月23-24日。MCPC 3 日期待定，将在我们的 Facebook 专页和 TikTok（${TIKTOK}）公布。报名链接：${REG}`
   },
   venue: {
     en: `Classes run 9am-5pm at No.29, Jalan Bandar 2, Taman Melawati, 53100 Kuala Lumpur. Breakfast, lunch and tea break are provided, and each public class has a maximum of 25 participants. Register here: ${REG}`,
