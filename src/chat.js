@@ -1,6 +1,8 @@
 // NOTE: copied from mecsc-ai-sales-agent/lib/chat.js. Only change: the two regex
 // look-behinds were rewritten as equivalent (?:^|[^x]) forms so the bundle also
-// parses on older Safari/iOS (<16.4). Answer logic is otherwise identical.
+// parses on older Safari/iOS (<16.4). Also added a few BM words to MALAY_WORDS
+// (siapa, kenapa, mengapa, cuaca, semalam, esok, menang, perlawanan, bola) so
+// off-topic BM questions get the BM reply. Answer logic is otherwise identical.
 // ============================================================
 // MECSc course-enquiry chat logic (single, portable module)
 //
@@ -113,7 +115,8 @@ const MALAY_WORDS = [
   'nak', 'untuk', 'dan', 'yang', 'ada', 'tidak', 'tak', 'adakah', 'dengan', 'di', 'ke', 'dari', 'sila', 'selamat',
   'pagi', 'petang', 'tuntut', 'tuntutan', 'syarikat', 'dalaman', 'tender', 'mohon', 'permohonan', 'cara', 'hari',
   'bulan', 'depan', 'kelas', 'tempat', 'makan', 'peserta', 'diskaun', 'bayar', 'syarat', 'pembersihan', 'lantai',
-  'permaidani', 'ya', 'tak'
+  'permaidani', 'ya', 'tak',
+  'siapa', 'kenapa', 'mengapa', 'cuaca', 'semalam', 'esok', 'menang', 'perlawanan', 'bola'
 ];
 const MALAY_SET = new Set(MALAY_WORDS);
 

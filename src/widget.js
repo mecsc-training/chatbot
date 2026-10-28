@@ -93,7 +93,7 @@ window.MECSCChat = {
   q('.head span').textContent = title;
 
   function linkify(el, text) {
-    String(text).split(/(https?:\/\/[^\s]+)/g).forEach(function (part) {
+    String(text).split(/(https?:\/\/[^\s\u3000-\u303F\u3400-\u9FFF\uFF00-\uFFEF]+)/g).forEach(function (part) {
       if (/^https?:\/\//.test(part)) {
         var m = part.match(/^(.*?)([.,;:!?)\uFF0C\u3002\uFF09]*)$/);
         var a = document.createElement('a');

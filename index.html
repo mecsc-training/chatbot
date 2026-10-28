@@ -50,7 +50,7 @@ small{display:block;text-align:center;color:#6b7280;font-size:11px;padding:0 12p
   var history = [], busy = false;
 
   function linkify(el, text) {
-    String(text).split(/(https?:\/\/[^\s]+)/g).forEach(function (p) {
+    String(text).split(/(https?:\/\/[^\s\u3000-\u303F\u3400-\u9FFF\uFF00-\uFFEF]+)/g).forEach(function (p) {
       if (/^https?:\/\//.test(p)) {
         var m = p.match(/^(.*?)([.,;:!?)\uFF0C\u3002\uFF09]*)$/);
         var a = document.createElement('a');
