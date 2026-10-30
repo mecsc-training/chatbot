@@ -18,6 +18,7 @@
  *   data-right   bubble offset from right in px  (default 20)
  *   data-bubble="false"  do not draw the bubble (only expose window.MECSCChat)
  */
+require("./header-fix.js");
 var chat = require('./chat.js');
 
 var MAX = chat.MAX_MESSAGE_CHARS || 500;
